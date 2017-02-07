@@ -72,7 +72,7 @@
 
 
 <p align="center">
-<input type="submit" value="Calculate Your Order">  name="btnSubmit" onClick="calcTotal()">
+<input type="submit" value="Calculate Your Order"  name="btnSubmit" onClick="calcTotal()">
 <input type="reset" value="Clear" name="btnClear">
 <p align="center"> Your Total Is: </p>
 <p align="center"> Tender: </p>
