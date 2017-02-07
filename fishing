@@ -67,6 +67,10 @@
 </select>
 </td>
 </tr>
+
+
+
+
 </table>
 
 
@@ -74,8 +78,8 @@
 <p align="center">
 <input type="submit" value="Calculate Your Order"  name="btnSubmit" onClick="calcTotal()">
 <input type="reset" value="Clear" name="btnClear">
-<p align="center"> Your Total Is: </p>
-<p align="center"> Tender: </p>
+<p align="center"> Your Total Is: <input type="text" name="txtTotal" size="10" value="0.00" > </p>
+<p align="center"> Tender: <input type="text" name="txtTotal" size="10" value="0.00" > </p>
 <p align="center"> Change: <input type="text" name="txtTotal" size="10" value="0.00" > </p>
 
 </form>
@@ -101,6 +105,8 @@ document.form.txtTotal.value=strTotal;
 
 
 
+
+
 <h2 align="center"> CHOOSE A COLOR FOR YOUR BACKGROUND </h2>
 <form name="frmColor" action="javascript:void(0);">
 <input type="submit" value="white" name="bW"
@@ -109,20 +115,17 @@ onClick="selectorColor('White')">
 <input type="submit" value="yellow" name="bY"
 onClick="selectorColor('Yellow')">
 
-<input type="submit" value="fuchsia" name="bF"
+<input " type="submit" value="fuchsia" name="bF"
 onClick="selectorColor('Fuchsia')">
 
-<input type="submit" value="green" name="bG"
+<input  type="submit" value="green" name="bG"
 onClick="selectorColor('Green')">
 
-<input type="submit" value="purple" name="bP"
+<input  type="submit" value="purple" name="bP"
 onClick="selectorColor('Purple')">
 
-<input type="submit" value="silver" name="bS"
+<input " type="submit" value="silver" name="bS"
 onClick="selectorColor('Silver')">
-
-
-
 
 
 
