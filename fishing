@@ -1,10 +1,10 @@
 <html> 
 <head> <title> Fishing </title> </head>
 <body bg color="#FFFF99" text="#800000">
-<hi align="center"> FISHING STORE ORDER FORM </h1>
+<h1 align="center"> FISHING STORE ORDER FORM </h1>
 <p align="center" We Rent All Of Our Fishing Equipment By The Week. </p>
 
-<form method="psot" name="form" action="javascript:void(0)">
+<form method="post" name="form" action="javascript:void(0)">
 
 <table border="0" width="39%" align="center">
 <tr>
@@ -15,12 +15,12 @@
 
 <tr>
 <td width="48%">1 FISHING ROD AND REEL </td>
-<td width="10%">
+<td width="10%"><input type="text" name="textrod" size="5" value="7.99"> </td>
 
-<input type="text" name="textrod" size="5" value="7.99> </td>
+
 <td width="43%"> <select size="1" name="qRod">
-<option selected value="0">
-Select Quantity </option>
+<option selected value="0">Select Quantity </option>
+
 
 <option value="1">1</option>
 <option value="2">2</option>
@@ -33,12 +33,12 @@ Select Quantity </option>
 <tr>
 
 <td width="48%"> TACKLE BOX </td>
-<td width="10%">
+<td width="10%"><input type="text" name="textbox" size="5" value="2.55"> </td>
 
-<input type="text" name="textbox" size="5" value="2.55> </td>
+
 <td width="43%"> <select size="1" name="qBox">
-<option selected value="0">
-Select Quantity </option>
+<option selected value="0">Select Quantity </option>
+
 
 <option value="1">1</option>
 <option value="2">2</option>
@@ -54,10 +54,10 @@ Select Quantity </option>
 <td width="10%">
 
 
-<input type="text" name="tagabox" size="5" value="1.75> </td>
+<input type="text" name="tagabox" size="5" value="1.75"> </td>
 <td width="43%"> <select size="1" name="tBox">
-<option selected value="0">
-Select Quantity </option>
+<option selected value="0">Select Quantity </option>
+
 
 <option value="1">1</option>
 <option value="2">2</option>
@@ -67,18 +67,58 @@ Select Quantity </option>
 </select>
 </td>
 </tr>
+</table>
 
 
 
 <p align="center">
-<input type="submit" value="Calculate Your Order">
-name="buttonSubmit" onClick="calcTotal()">
-<input type="reset" value="Clear" name="buttonClear">
+<input type="submit" value="Calculate Your Order">  name="btnSubmit" onClick="calcTotal()">
+<input type="reset" value="Clear" name="btnClear">
 <p align="center"> Your Total Is: </p>
 <p align="center"> Tender: </p>
-<p align="center"> Change: </p>
-<input type="text" name="txtTotal" size="10" value="0.00" > </p>
+<p align="center"> Change: <input type="text" name="txtTotal" size="10" value="0.00" > </p>
+
 </form>
+
+
+<script language="javascript">
+function calcTotal() {
+var strRod, strBox, prRod, prBox, strTotal;
+strRod=document.form.qRod.value;
+strBox=document.form.qBox.value;
+prRod=document.form.txtRod.value;
+prBox=document.form.txtBox.value;
+
+
+strRod=parseInt(strRod)*prRod;y
+strBox=parseInt(strBox)*prBox;
+strTotal=(strRod + strBox );
+document.form.txtTotal.value=strTotal;
+}
+
+</script> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
 
 
 
