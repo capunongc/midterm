@@ -73,7 +73,27 @@ Select Quantity </option>
 <p align="center">
 <input type="submit" value="Calculate Your Order">
 name="buttonSubmit" onClick="calcTotal()">
-<p align=
+<input type="reset" value="Clear" name="buttonClear">
+<p align="center"> Your Total Is: </p>
+<p align="center"> Tender: </p>
+<p align="center"> Change: </p>
+<input type="text" name="txtTotal" size="10" value="0.00" > </p>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
