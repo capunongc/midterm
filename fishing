@@ -101,6 +101,28 @@ document.form.txtTotal.value=strTotal;
 
 
 
+<h2 align="center"> CHOOSE A COLOR FOR YOUR BACKGROUND </h2>
+<form name="frmColor" action="javascript:void(0);">
+<input type="submit" value="white" name="bW"
+onClick="selectorColor('White')">
+
+<input type="submit" value="yellow" name="bY"
+onClick="selectorColor('Yellow')">
+
+<input type="submit" value="fuchsia" name="bF"
+onClick="selectorColor('Fuchsia')">
+
+<input type="submit" value="green" name="bG"
+onClick="selectorColor('Green')">
+
+<input type="submit" value="purple" name="bP"
+onClick="selectorColor('Purple')">
+
+<input type="submit" value="silver" name="bS"
+onClick="selectorColor('Silver')">
+
+
+
 
 
 
