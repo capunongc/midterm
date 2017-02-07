@@ -82,6 +82,12 @@
 <p align="center"> Tender: <input type="text" name="txtTotal" size="10" value="0.00" > </p>
 <p align="center"> Change: <input type="text" name="txtTotal" size="10" value="0.00" > </p>
 
+
+
+
+
+
+
 </form>
 
 
@@ -101,8 +107,6 @@ document.form.txtTotal.value=strTotal;
 }
 
 </script> 
-
-
 
 
 
@@ -129,6 +133,13 @@ onClick="selectorColor('Silver')">
 
 
 
+</form>
+
+
+<script language ="javascript"> function selectColor (selectColor){
+document.bgColor=selectColor:
+}
+</script>
 
 
 
